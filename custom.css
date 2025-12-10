@@ -1,0 +1,215 @@
+/*
+ # * Custom Beeper.app style
+ # * Theme: Catppuccin Mocha (Red Accent)
+ This file will be injected as a <style> tag
+ After making your changes, type "Reload custom CSS" in the command bar
+ To open dev tools, open the command bar and type "open console"
+ */
+
+/*:root {
+  --solarized_base03: #1e1e2e;
+  --solarized_base02: #181825;
+  --solarized_base01: #313244;
+  --solarized_base00: #45475a;
+  --solarized_base0: #cdd6f4;
+  --solarized_base1: #bac2de;
+  --solarized_base2: #a6adc8;
+  --solarized_base3: #cdd6f4;
+  --solarized_yellow: #f9e2af;
+  --solarized_orange: #fab387;
+  --solarized_red: #f38ba8;
+  --solarized_magenta: #f5c2e7;
+  --solarized_violet: #cba6f7;
+  --solarized_blue: #89b4fa;
+  --solarized_cyan: #89dceb;
+  --solarized_green: #a6e3a1;*/
+
+  :root {
+    /* Catppuccin Mocha Palette */
+    --solarized_base03: #1e1e2e; /* Base */
+    --solarized_base02: #181825; /* Mantle */
+    --solarized_base01: #313244; /* Surface0 */
+    --solarized_base00: #45475a; /* Surface1 */
+    --solarized_base0: #cdd6f4;  /* Text */
+    --solarized_base1: #bac2de;  /* Subtext1 */
+    --solarized_base2: #a6adc8;  /* Subtext0 */
+    --solarized_base3: #cdd6f4;  /* Text (Light mode bg mapping) */
+    
+    --solarized_yellow: #f9e2af;
+    --solarized_orange: #fab387;
+    --solarized_red: #f38ba8;    /* Mocha Red */
+    --solarized_magenta: #f5c2e7;
+    --solarized_violet: #cba6f7;
+    --solarized_blue: #89b4fa;
+    --solarized_cyan: #89dceb;
+    --solarized_green: #a6e3a1;
+
+  /* RGB Values for Mocha */
+  --solarized_base03_rgb: 30, 30, 46;
+  --solarized_base02_rgb: 24, 24, 37;
+  --solarized_base01_rgb: 49, 50, 68;
+  --solarized_base00_rgb: 69, 71, 90;
+  --solarized_base0_rgb: 205, 214, 244;
+  --solarized_base1_rgb: 186, 194, 222;
+  --solarized_base2_rgb: 166, 173, 200;
+  --solarized_base3_rgb: 205, 214, 244;
+  --solarized_yellow_rgb: 249, 226, 175;
+  --solarized_orange_rgb: 250, 179, 135;
+  --solarized_red_rgb: 243, 139, 168;
+  --solarized_magenta_rgb: 245, 194, 231;
+  --solarized_violet_rgb: 203, 166, 247;
+  --solarized_blue_rgb: 137, 180, 250;
+  --solarized_cyan_rgb: 137, 220, 235;
+  --solarized_green_rgb: 166, 227, 161;
+}
+
+/* ---------- Theme ---------- */
+
+:root {
+  /* Set Primary to Red as requested */
+  --color-primary: var(--solarized_red);
+
+  --color-surface: var(--solarized_base3);
+  --color-surface-bright: var(--solarized_base3);
+  --color-base-white: var(--solarized_base3);
+  --color-background-grouped: var(--solarized_base3);
+  --color-background-elevated: var(--solarized_base3);
+
+  --color-secondary-container: var(--solarized_base2);
+  --color-tertiary-container: var(--solarized_base2);
+  --color-background-sidebar-opaque: var(--solarized_base2);
+  --color-background-commandbar-opaque: var(--solarized_base2);
+  --color-border-neutrals: var(--solarized_base2);
+  --color-background-grouped-weak: var(--solarized_base2);
+  --color-border-neutrals-weak: var(--solarized_base2);
+  --color-background-message-bubble-received: var(--solarized_base2);
+  --color-background-input: var(--solarized_base2);
+  --color-bg: var(--solarized_base2);
+
+  --color-outline: var(--solarized_base1);
+
+  /* Set Brand to Red */
+  --color-brand: var(--solarized_red);
+  
+  /* Gradient adjusted to Red -> Violet/Mauve for consistency */
+  --color-gradient: linear-gradient(
+    190.1deg,
+    var(--solarized_red) -7.24%,
+                                    var(--solarized_violet) 109.66%
+  );
+
+  --color-background-button-secondary: var(--solarized_base2);
+  --color-border-button-secondary: transparent;
+  --color-text-button-secondary: #cdd6f4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Set Primary to Red as requested */
+    --color-primary: var(--solarized_red);
+
+    --color-surface: var(--solarized_base03);
+    --color-surface-bright: var(--solarized_base03);
+    --color-base-white: var(--solarized_base03);
+    --color-background-grouped: var(--solarized_base03);
+    --color-background-elevated: var(--solarized_base03);
+
+    --color-secondary-container: var(--solarized_base02);
+    --color-tertiary-container: var(--solarized_base02);
+    --color-background-sidebar-opaque: var(--solarized_base02);
+    --color-background-commandbar-opaque: var(--solarized_base02);
+    --color-border-neutrals: var(--solarized_base02);
+    --color-background-grouped-weak: var(--solarized_base02);
+    --color-border-neutrals-weak: var(--solarized_base02);
+    --color-background-message-bubble-received: var(--solarized_base02);
+    --color-background-input: var(--solarized_base02);
+    --color-bg: var(--solarized_base02);
+
+    --color-outline: var(--solarized_base01);
+
+    /* Set Brand to Red */
+    --color-brand: var(--solarized_red);
+    
+    /* Gradient adjusted to Red -> Violet/Mauve for consistency */
+    --color-gradient: linear-gradient(
+      190.1deg,
+      var(--solarized_red) -7.24%,
+                                      var(--solarized_violet) 109.66%
+    );
+
+    --color-background-button-secondary: var(--solarized_base00);
+    --color-border-button-secondary: transparent;
+    --color-text-button-secondary: #cdd6f4;
+  }
+}
+
+.menu-list,
+.emoji-mart {
+  background: var(--color-background-elevated);
+}
+.emoji-mart-category-label span {
+  background: var(--color-secondary-container);
+}
+/* White text updated to Mocha Text */
+.ThreadListItem-module__internal {
+  color : #cdd6f4;
+}
+
+/*
+ * Random CSS Hacks Notes
+ *
+ * 'Pinned / Favourites' Avatars
+ * $$('#root .left .threads-list-container .threads .virtual-list .participant-wrapper .participant-avatar .participant-img')
+ *
+ * Command Bar
+ * Command + J
+ * $$('.command-bar-modal .command-bar')
+ * Command + K / Command + F
+ * $$('.command-bar-modal .command-bar.command-bar-general-search')
+ *
+ * .command-bar.command-bar-general-search {
+ * width: 80%; // Override the width?
+ * }
+ *
+ * .command-bar, .forward-message-preview {
+ * width: 60vw;      // Override the width?
+ * max-width: 700px; // Override the max-width?
+ * }
+ */
+
+/**********************************************/
+/* Inbox - Favourites - Support Unread Filter */
+/**********************************************/
+
+.left .threads-list-container .threads:has(.AccountFilters button[data-text="Unread"][class*="AccountFilters-module__selected"]) .pinned-threads .sidebar-thread:not(.isUnread) {
+  display: none;
+}
+
+/**********************/
+/* Inbox - Favourites */
+/**********************/
+
+.left .threads-list-container .threads .virtual-list > div > div:first-child {
+  /* Ensure the favourites section is limited in height and scrollable */
+  overflow-y: auto;
+  max-height: 30vh;
+
+  /* There also seems to be a tiny bit of spacing that makes it scroll on the X axis.. so just hide that.. */
+  overflow-x: hidden;
+
+  .pinned-threads .sidebar-thread {
+    /* Override to the equivalent of the cols-5 class */
+    width: 20%;
+
+    &.isPinned > section[data-sentry-component="PinnedThreadListItem"] {
+      /* Set the avatar size */
+      --avatar-size: 30px;
+
+      /* Override a hardcoded size in GroupAvatar to use the --avatar-size properly */
+      .participant-avatar > div[data-sentry-component="GroupAvatar"] {
+        width: var(--avatar-size) !important;
+        height: var(--avatar-size) !important;
+      }
+    }
+  }
+}
